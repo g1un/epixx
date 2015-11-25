@@ -1,0 +1,17 @@
+//reset of margins & paddings and ul style
+body{
+  min-width: 320px;
+}
+
+body,
+h1, h2, h3,
+p,
+ul,
+blockquote{
+  padding: 0;
+  margin: 0;
+}
+
+ul{
+  list-style: none;
+}

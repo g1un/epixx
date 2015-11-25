@@ -1,0 +1,54 @@
+//links
+.main-nav__link{
+  font-family: $firasans;
+  font-size: $base-font-size;
+  line-height: $base-font-size + 58px;
+  font-weight: $fw400;
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:hover,
+  &:focus{
+    text-decoration: none;
+    color: $orange;
+  }
+}
+
+.promo-slider__button{
+  font-family: $firasans;
+  font-size: $base-font-size;
+  line-height: $base-font-size + 58px;
+  font-weight: $fw400;
+  color: $gray;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  position: relative;
+
+  &:hover,
+  &:focus{
+    text-decoration: none;
+    color: $orange;
+  }
+
+  &--active{
+    color: $orange;
+
+    &::after{
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 51px;
+
+      width: 30px;
+      height: 2px;
+
+      background: $orange;
+    }
+  }
+
+  @media (max-width: 320px) {
+    line-height: 18px;
+  }
+}

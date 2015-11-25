@@ -1,0 +1,47 @@
+//rooms-description-list
+.rooms-description {
+  &-list {
+    background: #f6f6f6;
+    padding-top: 50px;
+    padding-left: 18px;
+    padding-right: 23px;
+    padding-bottom: 33px;
+    border-bottom: 1px solid $lightergray;
+  }
+
+  &-item{
+    display: inline-block;
+    background: #fff;
+    margin-bottom: 13px;
+    padding-bottom: 42px;
+    overflow: hidden;
+    border: 1px solid #e3e3e3;
+
+    img{
+      display: block;
+      margin-bottom: 35px;
+      width: 100%;
+    }
+
+    .inner-title{
+      margin-bottom: 4px;
+    }
+
+    &__text{
+      font-family: $firasans;
+      font-size: $base-font-size;
+      line-height: $base-font-size + 10px;
+      font-weight: $fw500;
+      color: $dark;
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 0.02em;
+
+      b{
+        font-size: $medium-font-size;
+        color: $orange;
+      }
+    }
+  }
+}
+

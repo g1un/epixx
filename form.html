@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width">
+    <title>«Green Valley»</title>
+    <link href='css/normalize.css' rel='stylesheet'>
+    <link href='scss/style.css' rel='stylesheet'>
+  </head>
+  <body>
+  <header class='page-header'>
+    <div class='page-header__logo'><a class='main-logo' href='#'><img src='' alt=''></a></div>
+    <nav class='main-nav'>
+      <ul class='main-nav__list'>
+        <li class='main-nav__item'><a class='main-nav__link' href='#'>Номера</a></li>
+        <li class='main-nav__item'><a class='main-nav__link' href='#'>Коттедж</a></li>
+        <li class='main-nav__item'><a class='main-nav__link' href='#'>Ресторан</a></li>
+        <li class='main-nav__item'><a class='main-nav__link' href='#'>Отдых</a></li>
+        <li class='main-nav__item'><a class='main-nav__link' href='#'>Контакты</a></li>
+      </ul>
+    </nav>
+    <div class='page-header__contacts'>
+      <b class='page-header__phone'>+7 812 777-55-88</b>
+      г. Санкт-Петербург, Приморское ш.600
+    </div>
+    <a href='#' class='btn btn--orange btn--icon'>Забронировать</a>
+  </header>
+
+    <section class='booking-info'>
+      <h2 class='inner-title--big h2-title'>Бронирование</h2>
+      <p class="booking-info__text">
+        Чтобы забронировать номер в отеле или коттедж, заполните форму ниже или просто позвоните по телефону: <b>+7 812 777-55-88</b>
+      </p>
+    </section>
+
+    <form action='/echo' method='post'>
+      <section class='booking-date'>
+        <h3 class='booking-step-title'>Шаг 1</h3>
+        <h1 class='inner-title'>Дата отдыха</h1>
+        <div class='booking-date__wrapper'>
+          <div class='booking-date__begin'>
+            <h3 class="booking-step-title booking-step-title--light">Дата въезда</h3>
+            <input class="booking-step-title booking-step-title--green" id='booking-date__begin-day' type='text' name='booking-date__begin-day' placeholder="10">
+            <input class="booking-step-title booking-step-title--green" id='booking-date__begin-month' type='text' name='booking-date__begin-month' placeholder="11">
+            <input class="booking-step-title booking-step-title--green" id='booking-date__begin-year' type='text' name='booking-date__begin-year' placeholder="2015">
+          </div>
+          <div class='booking-date__end'>
+            <h3 class="booking-step-title booking-step-title--light">Дата выезда</h3>
+            <input class="booking-step-title" id='booking-date__end-day' type='text' name='booking-date__end-day' placeholder="дд">
+            <input class="booking-step-title" id='booking-date__end-month' type='text' name='booking-date__end-month' placeholder="мм">
+            <input class="booking-step-title" id='booking-date__end-year' type='text' name='booking-date__end-year' placeholder="гггг">
+          </div>
+        </div>        
+      </section>
+
+      <section class='booking-place'>
+        <h3 class='booking-step-title'>Шаг 2</h3>
+        <h1 class='inner-title'>Место проживания</h1>
+        <div class='booking-date__wrapper'>
+          <label class="booking-step-title booking-step-title--light" for='booking-place__hotel'>Отель
+            <input id='booking-place__hotel' type='radio' name='booking-place'>
+          </label>
+          <label class="booking-step-title booking-step-title--light" for='booking-place__cottage'>Коттедж
+            <input id='booking-place__cottage' type='radio' name='booking-place'>
+          </label>          
+        </div>        
+      </section>
+
+      <section class='booking-place-type'>
+        <h3 class='booking-step-title'>Шаг 3</h3>
+        <h1 class='inner-title'>Тип коттеджа</h1>
+        <div class='booking-place-type__wrapper'>
+          <label class="booking-step-title" for='booking-place-type__01'>Флагман
+            <input id='booking-place-type__01' type='radio' name='booking-place-type'>
+          </label>
+          <label class="booking-step-title" for='booking-place-type__02'>Озерный
+            <input id='booking-place-type__02' type='radio' name='booking-place-type'>
+          </label>
+          <label class="booking-step-title" for='booking-place-type__03'>Ольховка
+            <input id='booking-place-type__03' type='radio' name='booking-place-type'>
+          </label>
+          <label class="booking-step-title" for='booking-place-type__04'>Портовый
+            <input id='booking-place-type__04' type='radio' name='booking-place-type'>
+          </label>
+        </div>
+        <div class='booking-place-type__features'>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </section>
+
+      <section class='booking-personal'>
+        <h3 class='booking-step-title'>Шаг 4</h3>
+        <h1 class='inner-title'>Персональная информация</h1>
+        <div class='booking-personal__wrapper'>
+          <input class="booking-step-title booking-step-title--light" id='booking-personal__name' type='text' name='booking-personal__name' placeholder='Имя'>
+          <input class="booking-step-title booking-step-title--light" id='booking-personal__surname' type='text' name='booking-personal__surname' placeholder='Фамилия'>
+          <input class="booking-step-title booking-step-title--light" id='booking-personal__tel' type='text' name='booking-personal__tel' placeholder='Номер телефона'>
+          <input class="booking-step-title booking-step-title--light" id='booking-personal__mail' type='text' name='booking-personal__mail' placeholder='e-mail'>
+          <div class='booking-personal__note01 booking-step-title booking-step-title--text'>Мы свяжемся с вами в случае необходимости.</div>
+          <div class='booking-personal__note02 booking-step-title booking-step-title--text'>На этот адрес мы вышлем вам подтверждение о забронированном номере.</div>
+        </div>
+      </section>
+
+      <section class='booking-payment'>
+        <h3 class='booking-step-title'>Шаг 5</h3>
+        <h1 class='inner-title'>Способ оплаты</h1>
+        <div class='booking-payment__wrapper'>
+          <div class='booking-payment__sum booking-step-title booking-step-title--light'>
+            К оплате
+          </div>
+          <div class='booking-payment__sum-value booking-step-title'>-</div>
+          <p class="booking-step-title booking-step-title--text">
+            Пожалуйста, <span>выберите дату</span> въезда и выезда, чтобы увидеть сумму к оплате
+          </p>
+          <div class='booking-payment__wrapper'>
+            <label class='booking-step-title' for='booking-payment__type01'>По приезду
+              <input id='booking-payment__type01' type='radio' name='booking-payment__type'>
+            </label>
+            <p class="booking-step-title booking-step-title--text">
+              Вы можете произвести оплату по факту заселения.
+            </p>
+          </div>
+          <div class='booking-payment__wrapper'>
+            <label class='booking-step-title' for='booking-payment__type02'>Сейчас
+              <input id='booking-payment__type02' type='radio' name='booking-payment__type'>
+            </label>
+            <p class="booking-step-title booking-step-title--text">
+              Вы можете произвести оплату по факту заселения.
+            </p>
+            <label class='booking-step-title booking-step-title--light' for='booking-payment__card-number'>Номер карты
+              <input class="booking-step-title booking-step-title--light" id='booking-payment__card-number' type='text' name='booking-payment__card-number' placeholder="0000-0000-0000-0000">
+            </label>
+            <label class='booking-step-title booking-step-title--light' for='booking-payment__code-CVV'>Код CVV
+              <input class="booking-step-title booking-step-title--light" id='booking-payment__code-CVV' type='text' name='booking-payment__code-CVV' placeholder="123">
+            </label>
+            <label class='booking-step-title booking-step-title--light' for='booking-payment__card-surname'>Фамилия владельца карты
+              <input class="booking-step-title booking-step-title--light" id='booking-payment__card-surname' type='text' name='booking-payment__card-surname' placeholder="Vladimir Vladimirov">
+            </label>
+            <label class='booking-step-title booking-step-title--light' for='booking-payment__card-expired'>Действует до
+              <input class="booking-step-title booking-step-title--light" id='booking-payment__card-expired' type='text' name='booking-payment__card-expired' placeholder="01 / 2018">
+            </label>
+          </div>
+          <input class="btn btn--submit" id='booking-payment__submit' type='submit' name='booking-payment__submit' value='Забронировать'>
+        </div>
+      </section>
+    </form>
+
+  <footer class='page-footer'>
+    <div class='page-footer__address'>
+      г. Санкт-Петербург<br>
+      Приморское ш.600
+    </div>
+    <div class='social'>
+      <a class='main-logo' href='#'><img src='' alt=''></a>
+      <div class='social__list'>
+        <div class='social__vk'>
+        </div>
+        <div class='social__inst'>
+        </div>
+        <div class='social__fb'>
+        </div>
+      </div>
+    </div>
+    <div class='page-footer__tel-mail'>
+      +7 812 777-55-88<br>
+      info@greenvalley.ru
+    </div>
+  </footer>
+
+  </body>
+</html>

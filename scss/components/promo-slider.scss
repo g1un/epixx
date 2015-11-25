@@ -1,0 +1,96 @@
+//promo-slider
+.promo-slider{
+  text-align: center;
+
+  @media (max-width: 320px) {
+    padding-bottom: 9px;
+  }
+}
+
+.promo-slider__wrapper{
+  max-width: 1400px;
+
+  margin: 0 auto;
+  margin-bottom: 13px;
+
+  overflow: hidden;
+
+  position: relative;
+
+  @media (max-width: 320px) {
+    margin-bottom: 15px;
+  }
+}
+
+//expirement
+.promo-slider__background{
+  width: 100%;
+  min-width: 1064px;
+
+  max-height: 431px;
+  min-height: 320px;
+
+  @media (max-width: 320px){
+    height: 322px;
+  }
+}
+
+.promo-slider__item{
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  text-align: left;
+
+  position: absolute;
+  top: 92px;
+  left: 7.142857142857143%;
+
+  @media (max-width: 1199px){
+    left: 19px;
+  }
+
+  @media (max-width: 320px){
+    display: block;
+
+    width: 320px;
+
+    top: 20px;
+    left: 0;
+
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.9) none repeat scroll 0% 0%;
+
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+}
+
+.hidden{
+  display: none;
+}
+
+.promo-slider__paginator{
+  display: inline-block;
+
+  li{
+    display: block;
+    float: left;
+
+    margin-right: 33px;
+
+    letter-spacing: 0.08em;
+
+    &:last-child{
+      margin-right: 0;
+      letter-spacing: 0.05em;
+    }
+  }
+
+  @media (max-width: 320px) {
+    li{
+      margin-right: 19px;
+    }
+  }
+}

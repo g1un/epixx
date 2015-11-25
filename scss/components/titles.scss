@@ -1,0 +1,111 @@
+//titles
+.h1-title{
+  font-family: $ptserif;
+  font-size: $h1-font-size;
+  line-height: $h1-font-size + 6px;
+  font-weight: $fw400;
+  color: $dark;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  margin-bottom: 29px;
+
+  span{
+    padding: 0 7px;
+    background: #fff;
+  }
+  
+  &--white{
+    color: #fff;
+  }
+
+  @media (max-width: 320px){
+    font-size: $medium-font-size;
+    line-height: $medium-font-size + 8px;
+
+    margin-bottom: 11px;
+
+    span{
+      padding: 0;
+
+      background-color: transparent;
+    }
+  }
+}
+
+.h2-title{
+  font-family: $ptserif;
+  font-size: $h2-font-size;
+  line-height: $h2-font-size + 6px;
+  font-weight: $fw400;
+  color: #000;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+
+  margin-bottom: 29px;
+
+  &--white{
+    color: #fff;
+  }
+
+  @media (max-width: 320px) {
+    font-size: $big-font-size;
+    line-height: $big-font-size + 4px;
+  }
+}
+
+.h3-title{
+  font-family: $firasans;
+  font-size: $base-font-size;
+  line-height: $base-font-size + 10px;
+  font-weight: $fw500;
+  color: $dark;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.015em;
+
+  &--orange{
+    color: $orange;
+  }
+}
+
+.inner-title{
+  font-family: $ptserifreg;
+  font-size: $big-font-size;
+  line-height: $big-font-size + 4px;
+  font-weight: $fw400;
+  color: $dark;
+  text-transform: none;
+  text-decoration: none;
+}
+.booking-step-title{
+  font-family: $firasans;
+  font-size: $base-font-size;
+  line-height: $base-font-size + 4px;
+  font-weight: $fw500;
+  color: $lightgray;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &::-moz-placeholder{
+    opacity: 1;
+  }
+
+  &--light{
+    font-weight: $fw400;
+  }
+
+  &--green{
+    color: $green;
+  }
+
+  &--text{
+    text-transform: none;
+    font-weight: $fw400;
+
+    span{
+      border-bottom: 1px dashed #000;
+    }
+  }
+}

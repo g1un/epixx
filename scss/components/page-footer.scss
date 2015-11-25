@@ -1,0 +1,67 @@
+//page-footer
+.page-footer{
+  max-width: 1180px;
+
+  margin: 0 auto;
+
+  padding-top: 13px;
+
+  .main-logo{
+    padding-bottom: 0px;
+
+    margin-bottom: 9px;
+  }
+
+  &__address{
+    text-align: left;
+
+    padding: 0;
+    padding-left: 20px;
+
+    margin-top: 35px;
+
+    @media (min-width: 1200px) {
+      padding-left: 0;
+    }
+  }
+
+  &__tel-mail{
+    text-align: right;
+
+    padding: 0;
+    padding-right: 20px;
+
+    margin-top: 35px;
+
+    span{
+      text-align: left;
+      padding-right: 29px;
+    }
+
+    @media (min-width: 1200px) {
+      padding-right: 0;
+    }
+  }
+}
+
+.social{
+  text-align: center;
+
+  margin-bottom: 24px;
+}
+
+.social__list{
+  text-align: center;
+
+  font-size: 0;
+}
+
+.social__icon{
+  display: inline-block;
+
+  margin-right: 40px;
+
+  &:last-child{
+    margin-right: 0;
+  }
+}

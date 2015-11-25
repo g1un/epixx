@@ -1,0 +1,128 @@
+//room-item
+.room-item{
+  background-color: $light;
+  padding-top: 33px;
+  position: relative;
+  border: 1px solid $lightergray;
+  margin-bottom: 51px;
+  font-size: 0;
+
+  &:after{
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+  @media (min-width: 321px){
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+    padding-bottom: 14px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 1180px;
+    margin: 0 auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 39px;
+  }
+
+  &__info{
+    .inner-title{
+      margin-bottom: 2px;
+    }
+
+    @media (min-width: 1200px){
+      float: left;
+      width: 100% - 581%/$main-width*100;
+      margin-top: 33px;
+    }
+  }
+  &__under-title{
+    margin-bottom: 282px;
+
+    @media (min-width: 321px) and (max-width: 622px){
+      margin-bottom: 62.30636833046472%;
+    }
+
+    @media (min-width: 623px){
+      margin-bottom: 362px;
+    }
+
+    @media (min-width: 1200px){
+      margin-bottom: 27px;
+    }
+  }
+  
+  &__info-text{
+    text-align: left;
+    padding: 0 19px;
+    margin-bottom: 34px;
+    min-height: 110px;
+
+    @media (min-width: 321px){
+      min-height: 0;
+      max-width: 450px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media (min-width: 1200px){
+      margin-left: 91px;
+    }
+  }
+
+  .btn{
+    margin-bottom: 21px;
+
+    @media (min-width: 439px){
+      margin-bottom: 0;
+    }
+
+    &--more{
+      margin-bottom: 32px;
+    }
+
+    &__wrapper{
+
+      @media (min-width: 439px) {
+        display: inline-block;
+        margin-right: 114px;
+      }
+
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__img{
+    display: block;
+    position: absolute;
+    top: 113px;
+    left: 0;
+    width: 100%;
+
+    @media (min-width: 321px){
+      display: none;
+    }
+
+    img{
+      max-width: 100%;
+    }
+
+    &--768{
+      display: none;
+
+      @media (min-width: 321px){
+        display: block;
+      }
+    }
+    @media (min-width: 1200px) {
+      position: static;
+      float: right;
+      width: 581%/$main-width*100;
+    }
+  }
+}

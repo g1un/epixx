@@ -1,0 +1,186 @@
+//texts
+.page-header__contacts{
+  font-family: $firasans;
+  font-size: $base-font-size;
+  line-height: $base-font-size + 4px;
+  font-weight: $fw400;
+  color: $dark;
+  text-transform: none;
+  text-decoration: none;
+}
+
+.comments__date{
+  font-family: $firasans;
+  font-size: $base-font-size;
+  line-height: $base-font-size + 4px;
+  font-weight: $fw400;
+  color: $dark;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+}
+
+.page-header__phone{
+  font-family: $ptsans;
+  font-size: $medium-font-size;
+  line-height: $medium-font-size + 18px;
+  font-weight: $fw700;
+  color: #000;
+  text-transform: none;
+  text-decoration: none;
+}
+
+.promo-slider__item-text p{
+  font-family: $firasans;
+  font-size: $medium-font-size;
+  line-height: $medium-font-size + 6px;
+  font-weight: $fw400;
+  color: $dark;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0.015em;
+
+  max-width: 520px;
+
+  span{
+    display: inline-block;
+    padding: 0 12px;
+    background: #fff;
+  }
+
+  @media (max-width: 320px){
+    font-size: $small-font-size;
+    line-height: $small-font-size + 8px;
+
+    span{
+      display: inline;
+
+      padding: 0;
+
+      background-color: transparent;
+    }
+  }
+}
+
+.promo-features p{
+  font-family: $firasans;
+  font-size: $small-font-size;
+  line-height: $small-font-size + 6px;
+  font-weight: $fw400;
+  color: #000000;
+  text-transform: none;
+  text-decoration: none;
+
+  margin-bottom: 34px;
+
+  max-width: 570px;
+  display: inline-block;
+
+  @media (max-width: 320px) {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+.comments__item p,
+.room-item__info-text{
+  font-family: $firasans;
+  font-size: $small-font-size;
+  line-height: $small-font-size + 6px;
+  font-weight: $fw400;
+  color: #000000;
+  text-transform: none;
+  text-decoration: none;
+}
+
+.promo-features__item span{
+  font-family: $firasans;
+  font-size: $base-font-size;
+  line-height: $base-font-size + 4px;
+  font-weight: $fw500;
+  color: $dark;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.04em;
+}
+
+.comments__reviewer-name{
+  font-family: $firasans;
+  font-size: $base-font-size;
+  line-height: $base-font-size + 4px;
+  font-weight: $fw500;
+  color: $dark;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+}
+
+.offers__item p,
+.booking-info__text{
+  font-family: $firasans;
+  font-size: $small-font-size;
+  line-height: $small-font-size + 4px;
+  font-weight: $fw400;
+  color: $dark;
+  text-transform: none;
+  text-decoration: none;
+
+  b{
+    font-weight: $fw500;
+    color: $dark-orange;
+  }
+}
+
+.location__transport-item li{
+  font-family: $firasans;
+  font-size: $small-font-size;
+  line-height: $small-font-size + 6px;
+  font-weight: $fw400;
+  color: #000000;
+  text-transform: none;
+  text-decoration: none;
+
+  b{
+    font-weight: $fw500;
+  }
+}
+
+.room-item__under-title,
+.room-title__text,
+.room__under-btn-text{
+  font-family: $firasans;
+  font-size: $base-font-size;
+  line-height: $base-font-size + 10px;
+  font-weight: $fw500;
+  color: $dark;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+
+  b{
+    font-size: $medium-font-size;
+    color: $orange;
+  }
+}
+
+.page-footer__address{
+  font-family: $firasans;
+  font-size: $base-font-size;
+  line-height: $base-font-size + 4px;
+  font-weight: $fw400;
+  color: $dark;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+}
+
+.page-footer__tel-mail{
+  font-family: $firasans;
+  font-size: $base-font-size;
+  line-height: $base-font-size + 4px;
+  font-weight: $fw400;
+  color: $dark;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+}

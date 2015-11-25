@@ -1,0 +1,17 @@
+//room-categories
+.room-categories{
+  text-align: center;
+  border-bottom: 1px solid $lightergray;
+
+  .h2-title{
+    font-size: $h2-font-size;
+    line-height: $h2-font-size + px;
+    margin-top: 44px;
+    margin-bottom: 37px;
+
+    @media (min-width: 321px){
+      margin-top: 41px;
+      margin-bottom: 34px;
+    }
+  }
+}

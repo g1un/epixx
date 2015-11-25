@@ -1,0 +1,99 @@
+//btn styles
+.btn {
+  display: inline-block;
+  font-family: $firasans;
+  font-size: $base-font-size;
+  line-height: $base-font-size + 4px;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 11px 32px 8px 31px;
+  border-radius: 19px;
+  background: transparent;
+  border: 2px solid #fff;
+  letter-spacing: 0.045em;
+
+  &:hover,
+  &:focus {
+    background-color: #fff;
+    text-decoration: none;
+    color: $green;
+  }
+}
+
+.btn--orange{
+  background-color: $orange;
+  border: none;
+  //padding: 11px 30px 8px;
+
+  &:hover,
+  &:focus {
+    background: $dark-orange;
+    color: #fff;
+  }
+}
+
+.btn--icon{
+  padding: 11px 20px 8px 43px;
+  position: relative;
+
+  &:before{
+    content: '';
+    width: 15px;
+    height: 16px;
+
+    position: absolute;
+    top: 10px;
+    left: 19px;
+
+    background: url(../img/btn--icon.png) no-repeat 0 0;
+  }
+}
+
+.btn--more{
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px dashed $dark;
+  color: $dark;
+
+  &:hover,
+  &:focus {
+    border: none;
+    color: $dark;
+  }
+}
+
+.btn--submit{
+  background: $green;
+  border-radius: 0;
+  padding-left: 0;
+  padding-right: 0;
+  width: 780px;
+  
+  &:hover,
+  &:focus {
+    color: #fff;
+    background: $dark-green;
+  }
+}
+
+
+//rename!!
+.btn-round{
+  display: block;
+
+  font-size: 0;
+  line-height: 0;
+
+  width: 15px;
+  height: 15px;
+
+  border: 2px solid $orange;
+  border-radius: 50%;
+  
+  &--active{
+    background: $orange;
+  }
+}

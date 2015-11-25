@@ -1,0 +1,104 @@
+//comments
+.comments{
+  background: url("../img/comments-bg.jpg") no-repeat center top;
+
+  text-align: center;
+
+  padding-top: 41px;
+  padding-bottom: 50px;
+
+  .h2-title{
+    margin-bottom: 45px;
+    @media (max-width: 320px) {
+      margin-bottom: 53px;
+    }
+  }
+
+  @media (max-width: 320px) {
+    padding-top: 63px;
+
+    margin-bottom: 4px;
+  }
+}
+
+.comments__wrapper{
+  max-width: ($main-width)+px;
+
+  margin: 0 auto;
+}
+
+.comments__list{
+  font-size: 0;
+}
+
+.comments__item{
+  display: inline-block;
+  vertical-align: top;
+
+  background: #fff;
+
+  max-width: 477px;
+  min-height: 281px;
+
+  padding: 0 30px;
+
+  margin-bottom: 41px;
+  margin-left: 11px;
+  margin-right: 11px;
+
+  @media (max-width: 320px) {
+    margin-left: 0;
+    margin-right: 0;
+
+    padding: 0 37px;
+    padding-bottom: 20px;
+
+    &:not(:first-child){
+      display: none;
+    }
+  }
+
+  p{
+    margin-bottom: 16px;
+  }
+}
+
+.comments__reviewer-foto{
+  display: inline-block;
+
+  border: 2px solid #fff;
+
+  margin-top: -25px;
+  margin-bottom: 11px;
+
+  @media (max-width: 320px) {
+    margin-bottom: 12px;
+  }
+}
+
+.comments__reviewer-name{
+  display: block;
+
+  margin-bottom: 9px;
+}
+
+.comments-social{
+  display: inline-block;
+
+  width: 22px;
+  height: 13px;
+
+  background: url("../img/comments-social-vk.png") no-repeat 0 0;
+
+  margin-bottom: 8px;
+
+  &--fb{
+    width: 17px;
+    height: 17px;
+
+    background: url("../img/comments-social-fb.png") no-repeat 0 0;
+
+    margin-top: -2px;
+    margin-bottom: 6px;
+  }
+}

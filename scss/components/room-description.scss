@@ -1,0 +1,63 @@
+//room-description
+.room-description{
+  text-align: center;
+  border-top: 1px solid $lightergray;
+
+  .h2-title{
+    font-size: $h2-font-size;
+    line-height: $h2-font-size + px;
+    margin-top: 45px;
+    margin-bottom: 11px;
+
+    @media (min-width: 321px){
+      margin-top: 41px;
+      margin-bottom: 9px;
+    }
+  }
+
+  .btn{
+    margin-bottom: 15px;
+
+    &__wrapper-text{
+      font-family: $firasans;
+      font-size: $base-font-size;
+      line-height: $base-font-size + 10px;
+      font-weight: $fw500;
+      color: $dark;
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      margin-bottom: 41px;
+
+      b {
+        font-size: $medium-font-size;
+        color: $orange;
+      }
+
+      @media (min-width: 1200px){
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  .apartments {
+    background: #f6f6f6;
+    border-bottom: 1px solid #e3e3e3;
+    padding-top: 51px;
+    
+    @media (min-width: 321px) {
+      &__wrapper{
+        padding-right: 10px;
+        padding-left: 10px;
+      }
+    }
+
+    &-item {
+      border: 1px solid #e3e3e3;
+
+      @media (min-width: 321px) {
+        margin-right: 10px;
+      }
+    }
+  }
+}
