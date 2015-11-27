@@ -1,0 +1,48 @@
+//booking-date
+.booking-date{
+  background: #f1f1f1;
+  padding-top: 48px;
+  padding-bottom: 14px;
+
+  .inner-title{
+    margin-bottom: 32px;
+  }
+
+  .booking-step-title--light{
+    margin-bottom: 14px;
+  }
+
+  &__begin,
+  &__end{
+    font-size: 0;
+    text-align: left;
+    margin-left: 71px;
+    margin-bottom: 36px;
+  }
+
+  input{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    border: 1px solid $lightergray;
+    width: 55px;
+    height: 50px;
+    padding-top: 3px;
+    text-align: center;
+
+    &:first-child,
+    &:nth-child(2){
+      border-right: 0;
+    }
+
+    &:nth-child(2){
+      width: 52px;
+    }
+
+    &:last-child{
+      width: 73px;
+    }
+  }
+}

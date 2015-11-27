@@ -81,7 +81,12 @@
 //room-description
 @import "components/room-description";
 @import "components/room-shown";
-//@import "components/rooms-description-list";
+
+//form
+@import "components/booking-info";
+@import "components/booking-form";
+@import "components/booking-date";
+@import "components/booking-place";
 
 //carousel
 @import "carousel/owl.theme";

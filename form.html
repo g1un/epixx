@@ -4,27 +4,33 @@
     <meta charset='utf-8'>
     <meta name="viewport" content="width=device-width">
     <title>«Green Valley»</title>
-    <link href='css/normalize.css' rel='stylesheet'>
     <link href='scss/style.css' rel='stylesheet'>
   </head>
   <body>
-  <header class='page-header'>
-    <div class='page-header__logo'><a class='main-logo' href='#'><img src='' alt=''></a></div>
-    <nav class='main-nav'>
-      <ul class='main-nav__list'>
-        <li class='main-nav__item'><a class='main-nav__link' href='#'>Номера</a></li>
-        <li class='main-nav__item'><a class='main-nav__link' href='#'>Коттедж</a></li>
-        <li class='main-nav__item'><a class='main-nav__link' href='#'>Ресторан</a></li>
-        <li class='main-nav__item'><a class='main-nav__link' href='#'>Отдых</a></li>
-        <li class='main-nav__item'><a class='main-nav__link' href='#'>Контакты</a></li>
-      </ul>
-    </nav>
-    <div class='page-header__contacts'>
-      <b class='page-header__phone'>+7 812 777-55-88</b>
-      г. Санкт-Петербург, Приморское ш.600
-    </div>
-    <a href='#' class='btn btn--orange btn--icon'>Забронировать</a>
-  </header>
+    <header class='page-header container-fluid'>
+      <div class="page-header__wrapper row">
+        <div class='page-header__logo col-xs-offset-2 col-xs-8 col-lg-offset-0 col-lg-2'><a class='main-logo' href='#'><img src='img/main-logo.png' alt='logo'></a></div>
+        <nav class='main-nav visible-lg-block col-lg-5'>
+          <ul class='main-nav__list'>
+            <li class='main-nav__item'><a class='main-nav__link' href='#'>Номера</a></li>
+            <li class='main-nav__item'><a class='main-nav__link' href='#'>Коттедж</a></li>
+            <li class='main-nav__item'><a class='main-nav__link' href='#'>Ресторан</a></li>
+            <li class='main-nav__item'><a class='main-nav__link' href='#'>Отдых</a></li>
+            <li class='main-nav__item'><a class='main-nav__link' href='#'>Контакты</a></li>
+          </ul>
+        </nav>
+        <div class='page-header__contacts visible-lg-block col-lg-3'>
+          <b class='page-header__phone'>+7 812 777-55-88</b><br>
+          г. Санкт-Петербург, Приморское ш.600
+        </div>
+        <div class="page-header__btn-wrapper visible-lg-block col-lg-2">
+          <a href='#' class='btn btn--orange btn--icon'>Забронировать</a>
+        </div>
+        <div class="page-header__sandwich col-xs-2 hidden-lg">
+          <img src="img/sandwich.png" alt="sandwich">
+        </div>
+      </div>
+    </header>
 
     <section class='booking-info'>
       <h2 class='inner-title--big h2-title'>Бронирование</h2>
@@ -33,19 +39,19 @@
       </p>
     </section>
 
-    <form action='/echo' method='post'>
+    <form class="booking-form" action='#' method='post'>
       <section class='booking-date'>
         <h3 class='booking-step-title'>Шаг 1</h3>
         <h1 class='inner-title'>Дата отдыха</h1>
         <div class='booking-date__wrapper'>
+          <h3 class="booking-step-title booking-step-title--light">Дата въезда</h3>
           <div class='booking-date__begin'>
-            <h3 class="booking-step-title booking-step-title--light">Дата въезда</h3>
             <input class="booking-step-title booking-step-title--green" id='booking-date__begin-day' type='text' name='booking-date__begin-day' placeholder="10">
             <input class="booking-step-title booking-step-title--green" id='booking-date__begin-month' type='text' name='booking-date__begin-month' placeholder="11">
             <input class="booking-step-title booking-step-title--green" id='booking-date__begin-year' type='text' name='booking-date__begin-year' placeholder="2015">
           </div>
+          <h3 class="booking-step-title booking-step-title--light">Дата выезда</h3>
           <div class='booking-date__end'>
-            <h3 class="booking-step-title booking-step-title--light">Дата выезда</h3>
             <input class="booking-step-title" id='booking-date__end-day' type='text' name='booking-date__end-day' placeholder="дд">
             <input class="booking-step-title" id='booking-date__end-month' type='text' name='booking-date__end-month' placeholder="мм">
             <input class="booking-step-title" id='booking-date__end-year' type='text' name='booking-date__end-year' placeholder="гггг">
@@ -56,13 +62,11 @@
       <section class='booking-place'>
         <h3 class='booking-step-title'>Шаг 2</h3>
         <h1 class='inner-title'>Место проживания</h1>
-        <div class='booking-date__wrapper'>
-          <label class="booking-step-title booking-step-title--light" for='booking-place__hotel'>Отель
-            <input id='booking-place__hotel' type='radio' name='booking-place'>
-          </label>
-          <label class="booking-step-title booking-step-title--light" for='booking-place__cottage'>Коттедж
-            <input id='booking-place__cottage' type='radio' name='booking-place'>
-          </label>          
+        <div class='booking-place__wrapper'>
+          <input id='booking-place__hotel' type='radio' name='booking-place'>
+          <label class="booking-place__hotel booking-step-title booking-step-title--light" for='booking-place__hotel'>Отель</label>
+          <input id='booking-place__cottage' type='radio' name='booking-place'>
+          <label class="booking-place__cottage booking-step-title booking-step-title--light" for='booking-place__cottage'>Коттедж</label>
         </div>        
       </section>
 
@@ -149,25 +153,24 @@
       </section>
     </form>
 
-  <footer class='page-footer'>
-    <div class='page-footer__address'>
-      г. Санкт-Петербург<br>
-      Приморское ш.600
-    </div>
-    <div class='social'>
-      <a class='main-logo' href='#'><img src='' alt=''></a>
-      <div class='social__list'>
-        <div class='social__vk'>
-        </div>
-        <div class='social__inst'>
-        </div>
-        <div class='social__fb'>
+  <footer class='page-footer container-fluid'>
+    <div class="page-footer__wrapper row">
+      <div class='page-footer__address hidden-xs col-sm-4'>
+        г. Санкт-Петербург<br>
+        Приморское ш.600
+      </div>
+      <div class='social col-xs-12 col-sm-4'>
+        <a class='main-logo' href='#'><img src='img/main-logo.png' alt='main-logo'></a>
+        <div class='social__list'>
+          <a class='social__icon' href="#"><img src="img/social_vk.png" alt="social_vk"></a>
+          <a class='social__icon' href="#"><img src="img/social_inst.png" alt="social_inst"></a>
+          <a class='social__icon' href="#"><img src="img/social_fb.png" alt="social_fb"></a>
         </div>
       </div>
-    </div>
-    <div class='page-footer__tel-mail'>
-      +7 812 777-55-88<br>
-      info@greenvalley.ru
+      <div class='page-footer__tel-mail hidden-xs col-sm-4'>
+        <span>+7 812 777-55-88</span><br>
+        info@greenvalley.ru
+      </div>
     </div>
   </footer>
 

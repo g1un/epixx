@@ -221,11 +221,15 @@ th {
 }
 
 * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 *:before,
 *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -290,6 +294,7 @@ img {
   border: 1px solid #ddd;
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   display: inline-block;
   max-width: 100%;
@@ -1691,12 +1696,15 @@ ul {
   color: #979696;
   text-transform: uppercase;
   text-decoration: none;
+  margin-bottom: 3px;
 }
 .booking-step-title::-moz-placeholder {
   opacity: 1;
 }
 .booking-step-title--light {
   font-weight: 400;
+  color: #4c4c4c;
+  letter-spacing: .05em;
 }
 .booking-step-title--green {
   color: #0ab89d;
@@ -2098,6 +2106,7 @@ ul {
 @media (max-width: 320px) {
   .promo-features {
     margin-bottom: 27px;
+    -webkit-background-size: auto 100%;
     background-size: auto 100%;
   }
   .promo-features .h2-title {
@@ -2905,15 +2914,11 @@ ul {
   height: 6px;
   border-bottom: 1px solid #ff7435;
   border-right: 1px solid #ff7435;
-  -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 @media (min-width: 768px) {
   .room-shown__options-list--col-2 {
-    -webkit-column-count: 2;
-       -moz-column-count: 2;
-            column-count: 2;
+    column-count: 2;
     padding-right: 17px;
   }
 }
@@ -2974,6 +2979,116 @@ ul {
   }
 }
 
+.booking-info {
+  text-align: center;
+  padding-top: 66px;
+  border-top: 1px solid #ebebeb;
+  padding-bottom: 45px;
+}
+.booking-info .h2-title {
+  font-size: 30px;
+  line-height: 36px;
+  margin-bottom: 23px;
+}
+.booking-info__text {
+  padding: 0 45px;
+}
+
+.booking-form {
+  text-align: center;
+}
+
+.booking-date {
+  background: #f1f1f1;
+  padding-top: 48px;
+  padding-bottom: 14px;
+}
+.booking-date .inner-title {
+  margin-bottom: 32px;
+}
+.booking-date .booking-step-title--light {
+  margin-bottom: 14px;
+}
+.booking-date__begin, .booking-date__end {
+  font-size: 0;
+  text-align: left;
+  margin-left: 71px;
+  margin-bottom: 36px;
+}
+.booking-date input {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  border: 1px solid #ebebeb;
+  width: 55px;
+  height: 50px;
+  padding-top: 3px;
+  text-align: center;
+}
+.booking-date input:first-child, .booking-date input:nth-child(2) {
+  border-right: 0;
+}
+.booking-date input:nth-child(2) {
+  width: 52px;
+}
+.booking-date input:last-child {
+  width: 73px;
+}
+
+.booking-place {
+  padding-top: 39px;
+  padding-bottom: 10px;
+}
+.booking-place input {
+  display: none;
+}
+.booking-place input:checked + label:after {
+  opacity: 1;
+}
+.booking-place .inner-title {
+  margin-bottom: 25px;
+}
+.booking-place__wrapper {
+  border: 1px solid #ebebeb;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 0;
+  padding-top: 25px;
+}
+.booking-place__wrapper label {
+  display: inline-block;
+  width: 50%;
+  margin-bottom: 115px;
+}
+.booking-place__hotel {
+  position: relative;
+}
+.booking-place__hotel:after {
+  content: '';
+  position: absolute;
+  top: 28px;
+  left: 28px;
+  width: 82px;
+  height: 64px;
+  background: url("../img/booking-place-hotel.jpg") no-repeat 0 0;
+  opacity: .4;
+}
+.booking-place__cottage {
+  position: relative;
+}
+.booking-place__cottage:after {
+  content: '';
+  position: absolute;
+  top: 28px;
+  left: 30px;
+  width: 80px;
+  height: 62px;
+  background: url("../img/booking-place-cottage.jpg") no-repeat 0 0;
+  opacity: .4;
+}
+
 /*
 * 	Owl Carousel Owl Demo Theme 
 *	v1.3.3
@@ -2993,6 +3108,8 @@ ul {
   margin: 5px;
   padding: 3px 10px;
   font-size: 12px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
   border-radius: 30px;
   background: #869791;
   filter: Alpha(Opacity=50);
@@ -3013,7 +3130,7 @@ ul {
 .owl-theme .owl-controls .owl-page {
   display: inline-block;
   zoom: 1;
-  *display: inline
+  *display: inline;
   /*IE7 life-saver */
 }
 
@@ -3025,6 +3142,8 @@ ul {
   filter: Alpha(Opacity=50);
   /*IE7 fix*/
   opacity: 0.5;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
   border-radius: 20px;
   background: #869791;
 }
@@ -3043,6 +3162,8 @@ ul {
   color: #FFF;
   padding: 2px 10px;
   font-size: 12px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
   border-radius: 30px;
 }
 
@@ -3063,58 +3184,70 @@ ul {
   -moz-perspective: 1200px;
   -moz-perspective-origin-x: 50%;
   -moz-perspective-origin-y: 50%;
-  -webkit-perspective: 1200px;
-          perspective: 1200px;
+  perspective: 1200px;
 }
 
 /* fade */
 .owl-fade-out {
   z-index: 10;
   -webkit-animation: fadeOut .7s both ease;
+  -moz-animation: fadeOut .7s both ease;
   animation: fadeOut .7s both ease;
 }
 
 .owl-fade-in {
   -webkit-animation: fadeIn .7s both ease;
+  -moz-animation: fadeIn .7s both ease;
   animation: fadeIn .7s both ease;
 }
 
 /* backSlide */
 .owl-backSlide-out {
   -webkit-animation: backSlideOut 1s both ease;
+  -moz-animation: backSlideOut 1s both ease;
   animation: backSlideOut 1s both ease;
 }
 
 .owl-backSlide-in {
   -webkit-animation: backSlideIn 1s both ease;
+  -moz-animation: backSlideIn 1s both ease;
   animation: backSlideIn 1s both ease;
 }
 
 /* goDown */
 .owl-goDown-out {
   -webkit-animation: scaleToFade .7s ease both;
+  -moz-animation: scaleToFade .7s ease both;
   animation: scaleToFade .7s ease both;
 }
 
 .owl-goDown-in {
   -webkit-animation: goDown .6s ease both;
+  -moz-animation: goDown .6s ease both;
   animation: goDown .6s ease both;
 }
 
 /* scaleUp */
 .owl-fadeUp-in {
   -webkit-animation: scaleUpFrom .5s ease both;
+  -moz-animation: scaleUpFrom .5s ease both;
   animation: scaleUpFrom .5s ease both;
 }
 
 .owl-fadeUp-out {
   -webkit-animation: scaleUpTo .5s ease both;
+  -moz-animation: scaleUpTo .5s ease both;
   animation: scaleUpTo .5s ease both;
 }
 
 /* Keyframes */
 /*empty*/
 @-webkit-keyframes empty {
+  0% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes empty {
   0% {
     opacity: 1;
   }
@@ -3132,6 +3265,14 @@ ul {
     opacity: 1;
   }
 }
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -3141,6 +3282,14 @@ ul {
   }
 }
 @-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes fadeOut {
   0% {
     opacity: 1;
   }
@@ -3170,21 +3319,32 @@ ul {
     -webkit-transform: translateZ(-500px) translateX(-200%);
   }
 }
-@keyframes backSlideOut {
+@-moz-keyframes backSlideOut {
   25% {
     opacity: .5;
-    -webkit-transform: translateZ(-500px);
-            transform: translateZ(-500px);
+    -moz-transform: translateZ(-500px);
   }
   75% {
     opacity: .5;
-    -webkit-transform: translateZ(-500px) translateX(-200%);
-            transform: translateZ(-500px) translateX(-200%);
+    -moz-transform: translateZ(-500px) translateX(-200%);
   }
   100% {
     opacity: .5;
-    -webkit-transform: translateZ(-500px) translateX(-200%);
-            transform: translateZ(-500px) translateX(-200%);
+    -moz-transform: translateZ(-500px) translateX(-200%);
+  }
+}
+@keyframes backSlideOut {
+  25% {
+    opacity: .5;
+    transform: translateZ(-500px);
+  }
+  75% {
+    opacity: .5;
+    transform: translateZ(-500px) translateX(-200%);
+  }
+  100% {
+    opacity: .5;
+    transform: translateZ(-500px) translateX(-200%);
   }
 }
 @-webkit-keyframes backSlideIn {
@@ -3201,21 +3361,32 @@ ul {
     -webkit-transform: translateZ(0) translateX(0);
   }
 }
-@keyframes backSlideIn {
+@-moz-keyframes backSlideIn {
   0%, 25% {
     opacity: .5;
-    -webkit-transform: translateZ(-500px) translateX(200%);
-            transform: translateZ(-500px) translateX(200%);
+    -moz-transform: translateZ(-500px) translateX(200%);
   }
   75% {
     opacity: .5;
-    -webkit-transform: translateZ(-500px);
-            transform: translateZ(-500px);
+    -moz-transform: translateZ(-500px);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateZ(0) translateX(0);
-            transform: translateZ(0) translateX(0);
+    -moz-transform: translateZ(0) translateX(0);
+  }
+}
+@keyframes backSlideIn {
+  0%, 25% {
+    opacity: .5;
+    transform: translateZ(-500px) translateX(200%);
+  }
+  75% {
+    opacity: .5;
+    transform: translateZ(-500px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateZ(0) translateX(0);
   }
 }
 @-webkit-keyframes scaleToFade {
@@ -3224,11 +3395,16 @@ ul {
     -webkit-transform: scale(0.8);
   }
 }
+@-moz-keyframes scaleToFade {
+  to {
+    opacity: 0;
+    -moz-transform: scale(0.8);
+  }
+}
 @keyframes scaleToFade {
   to {
     opacity: 0;
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
+    transform: scale(0.8);
   }
 }
 @-webkit-keyframes goDown {
@@ -3236,10 +3412,14 @@ ul {
     -webkit-transform: translateY(-100%);
   }
 }
+@-moz-keyframes goDown {
+  from {
+    -moz-transform: translateY(-100%);
+  }
+}
 @keyframes goDown {
   from {
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
+    transform: translateY(-100%);
   }
 }
 @-webkit-keyframes scaleUpFrom {
@@ -3248,11 +3428,16 @@ ul {
     -webkit-transform: scale(1.5);
   }
 }
+@-moz-keyframes scaleUpFrom {
+  from {
+    opacity: 0;
+    -moz-transform: scale(1.5);
+  }
+}
 @keyframes scaleUpFrom {
   from {
     opacity: 0;
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
+    transform: scale(1.5);
   }
 }
 @-webkit-keyframes scaleUpTo {
@@ -3261,11 +3446,16 @@ ul {
     -webkit-transform: scale(1.5);
   }
 }
+@-moz-keyframes scaleUpTo {
+  to {
+    opacity: 0;
+    -moz-transform: scale(1.5);
+  }
+}
 @keyframes scaleUpTo {
   to {
     opacity: 0;
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
+    transform: scale(1.5);
   }
 }
 /* 
@@ -3304,6 +3494,9 @@ ul {
 
 .owl-carousel .owl-wrapper-outer.autoHeight {
   -webkit-transition: height 500ms ease-in-out;
+  -moz-transition: height 500ms ease-in-out;
+  -ms-transition: height 500ms ease-in-out;
+  -o-transition: height 500ms ease-in-out;
   transition: height 500ms ease-in-out;
 }
 

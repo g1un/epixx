@@ -1,0 +1,17 @@
+//booking-info
+.booking-info{
+  text-align: center;
+  padding-top: 66px;
+  border-top: 1px solid $lightergray;
+  padding-bottom: 45px;
+
+  .h2-title{
+    font-size: $h2-font-size;
+    line-height: $h2-font-size + 6px;
+    margin-bottom: 23px;
+  }
+
+  &__text{
+    padding: 0 45px;
+  }
+}
