@@ -95,6 +95,7 @@
   }
 
   &--light{
+    font-family: $firasansreg;
     font-weight: $fw400;
     color: #4c4c4c;
     letter-spacing: .05em;
@@ -105,6 +106,7 @@
   }
 
   &--text{
+    font-family: $firasansreg;
     text-transform: none;
     font-weight: $fw400;
 

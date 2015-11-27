@@ -1,20 +1,30 @@
 //Fonts
 @font-face {
   font-family: 'PT Serif Caption';
-  src: url(../../fonts/PTSerifCaption/ptSerifCaption.ttf);
+  src: url(../fonts/PT_Serif-Caption-Web-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'PT Serif';
+  src: url(../fonts/PT_Serif-Web-Regular.ttf);
 }
 
 @font-face {
   font-family: 'Fira Sans Regular';
-  src: url(../../fonts/FiraSans/FiraSans-Regular.ttf);
+  src: url(../fonts/FiraSans-Regular.ttf);
 }
 
 @font-face {
   font-family: 'Fira Sans Medium';
-  src: url(../../fonts/FiraSans/FiraSans-Medium.ttf);
+  src: url(../fonts/FiraSans-Medium.ttf);
 }
 
 @font-face {
   font-family: 'PT Sans Caption Bold';
-  src: url(../../fonts/PTSansCaption/ptSansCaptionBold.ttf);
+  src: url(../fonts/PT_Sans-Caption-Web-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'PT Sans Caption Reg';
+  src: url(../fonts/PT_Sans-Caption-Web-Regular.ttf);
 }

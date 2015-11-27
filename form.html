@@ -74,18 +74,14 @@
         <h3 class='booking-step-title'>Шаг 3</h3>
         <h1 class='inner-title'>Тип коттеджа</h1>
         <div class='booking-place-type__wrapper'>
-          <label class="booking-step-title" for='booking-place-type__01'>Флагман
-            <input id='booking-place-type__01' type='radio' name='booking-place-type'>
-          </label>
-          <label class="booking-step-title" for='booking-place-type__02'>Озерный
-            <input id='booking-place-type__02' type='radio' name='booking-place-type'>
-          </label>
-          <label class="booking-step-title" for='booking-place-type__03'>Ольховка
-            <input id='booking-place-type__03' type='radio' name='booking-place-type'>
-          </label>
-          <label class="booking-step-title" for='booking-place-type__04'>Портовый
-            <input id='booking-place-type__04' type='radio' name='booking-place-type'>
-          </label>
+          <input id='booking-place-type__01' type='radio' name='booking-place-type'>
+          <label class="booking-step-title" for='booking-place-type__01'>Флагман</label><br>
+          <input id='booking-place-type__02' type='radio' name='booking-place-type'>
+          <label class="booking-step-title" for='booking-place-type__02'>Озерный</label><br>
+          <input id='booking-place-type__03' type='radio' name='booking-place-type'>
+          <label class="booking-step-title" for='booking-place-type__03'>Ольховка</label><br>
+          <input id='booking-place-type__04' type='radio' name='booking-place-type'>
+          <label class="booking-step-title" for='booking-place-type__04'>Портовый</label><br>
         </div>
         <div class='booking-place-type__features'>
           <div></div>
@@ -101,11 +97,15 @@
         <h1 class='inner-title'>Персональная информация</h1>
         <div class='booking-personal__wrapper'>
           <input class="booking-step-title booking-step-title--light" id='booking-personal__name' type='text' name='booking-personal__name' placeholder='Имя'>
+          <label for="booking-personal__name"></label><br>
           <input class="booking-step-title booking-step-title--light" id='booking-personal__surname' type='text' name='booking-personal__surname' placeholder='Фамилия'>
+          <label for="booking-personal__surname"></label><br>
           <input class="booking-step-title booking-step-title--light" id='booking-personal__tel' type='text' name='booking-personal__tel' placeholder='Номер телефона'>
+          <label for="booking-personal__tel"></label><br>
+          <p class='booking-personal__note booking-step-title booking-step-title--text'>Мы свяжемся с вами в случае необходимости.</p>
           <input class="booking-step-title booking-step-title--light" id='booking-personal__mail' type='text' name='booking-personal__mail' placeholder='e-mail'>
-          <div class='booking-personal__note01 booking-step-title booking-step-title--text'>Мы свяжемся с вами в случае необходимости.</div>
-          <div class='booking-personal__note02 booking-step-title booking-step-title--text'>На этот адрес мы вышлем вам подтверждение о забронированном номере.</div>
+          <label for="booking-personal__mail"></label><br>
+          <p class='booking-personal__note booking-step-title booking-step-title--text'>На этот адрес мы вышлем вам подтверждение о забронированном номере.</p>
         </div>
       </section>
 
@@ -113,42 +113,48 @@
         <h3 class='booking-step-title'>Шаг 5</h3>
         <h1 class='inner-title'>Способ оплаты</h1>
         <div class='booking-payment__wrapper'>
-          <div class='booking-payment__sum booking-step-title booking-step-title--light'>
-            К оплате
-          </div>
-          <div class='booking-payment__sum-value booking-step-title'>-</div>
-          <p class="booking-step-title booking-step-title--text">
-            Пожалуйста, <span>выберите дату</span> въезда и выезда, чтобы увидеть сумму к оплате
-          </p>
-          <div class='booking-payment__wrapper'>
-            <label class='booking-step-title' for='booking-payment__type01'>По приезду
-              <input id='booking-payment__type01' type='radio' name='booking-payment__type'>
-            </label>
+
+          <div class="booking-payment__to-pay">
+            <div class='booking-payment__sum booking-step-title booking-step-title--light'>
+              К оплате
+            </div>
+            <div class='booking-payment__sum-value booking-step-title'>-</div>
             <p class="booking-step-title booking-step-title--text">
+              Пожалуйста, <span>выберите дату</span> въезда и выезда, чтобы увидеть сумму к оплате
+            </p>
+          </div>
+
+          <div class='booking-payment__pay-after'>
+            <input id='booking-payment__type01' type='radio' name='booking-payment__type'>
+            <label class='booking-payment__type booking-step-title' for='booking-payment__type01'>По приезду</label>
+            <p class="booking-payment__pay-after-text booking-step-title booking-step-title--text">
               Вы можете произвести оплату по факту заселения.
             </p>
           </div>
-          <div class='booking-payment__wrapper'>
-            <label class='booking-step-title' for='booking-payment__type02'>Сейчас
-              <input id='booking-payment__type02' type='radio' name='booking-payment__type'>
-            </label>
-            <p class="booking-step-title booking-step-title--text">
-              Вы можете произвести оплату по факту заселения.
+
+          <div class='booking-payment__pay-before'>
+            <input id='booking-payment__type02' type='radio' name='booking-payment__type'>
+            <label class='booking-payment__type booking-step-title' for='booking-payment__type02'>Сейчас</label><br>
+            <p class="booking-payment__pay-before-text booking-step-title booking-step-title--text">
+              Прямо сейчас вы можете произвести оплату с помощью банковской карты.
             </p>
-            <label class='booking-step-title booking-step-title--light' for='booking-payment__card-number'>Номер карты
-              <input class="booking-step-title booking-step-title--light" id='booking-payment__card-number' type='text' name='booking-payment__card-number' placeholder="0000-0000-0000-0000">
-            </label>
-            <label class='booking-step-title booking-step-title--light' for='booking-payment__code-CVV'>Код CVV
-              <input class="booking-step-title booking-step-title--light" id='booking-payment__code-CVV' type='text' name='booking-payment__code-CVV' placeholder="123">
-            </label>
-            <label class='booking-step-title booking-step-title--light' for='booking-payment__card-surname'>Фамилия владельца карты
-              <input class="booking-step-title booking-step-title--light" id='booking-payment__card-surname' type='text' name='booking-payment__card-surname' placeholder="Vladimir Vladimirov">
-            </label>
-            <label class='booking-step-title booking-step-title--light' for='booking-payment__card-expired'>Действует до
-              <input class="booking-step-title booking-step-title--light" id='booking-payment__card-expired' type='text' name='booking-payment__card-expired' placeholder="01 / 2018">
-            </label>
+
+            <label class='booking-payment__data booking-step-title booking-step-title--light' for='booking-payment__card-number'>Номер карты</label>
+            <input class="booking-step-title booking-step-title--light" id='booking-payment__card-number' type='text' name='booking-payment__card-number' placeholder="0000-0000-0000-0000">
+
+            <label class='booking-payment__data booking-step-title booking-step-title--light' for='booking-payment__code-CVV'>Код CVV</label>
+            <input class="booking-step-title booking-step-title--light" id='booking-payment__code-CVV' type='text' name='booking-payment__code-CVV' placeholder="123">
+
+            <label class='booking-payment__data booking-step-title booking-step-title--light' for='booking-payment__card-surname'>Фамилия владельца карты</label>
+            <input class="booking-step-title booking-step-title--light" id='booking-payment__card-surname' type='text' name='booking-payment__card-surname' placeholder="Vladimir Vladimirov">
+
+            <label class='booking-payment__data booking-step-title booking-step-title--light' for='booking-payment__card-expired'>Действует до</label>
+            <input class="booking-step-title booking-step-title--light" id='booking-payment__card-expired' type='text' name='booking-payment__card-expired' placeholder="01 / 2018">
+
           </div>
+
           <input class="btn btn--submit" id='booking-payment__submit' type='submit' name='booking-payment__submit' value='Забронировать'>
+
         </div>
       </section>
     </form>

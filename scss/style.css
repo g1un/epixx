@@ -1,8 +1,4 @@
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-@import url(https://fonts.googleapis.com/css?family=Fira+Sans:400,500&subset=latin,cyrillic);
-@import url(https://fonts.googleapis.com/css?family=PT+Serif+Caption&subset=latin,cyrillic);
-@import url(https://fonts.googleapis.com/css?family=PT+Serif&subset=latin,cyrillic);
-@import url(https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700&subset=latin,cyrillic);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -1515,6 +1511,30 @@ hr {
     display: none !important;
   }
 }
+@font-face {
+  font-family: 'PT Serif Caption';
+  src: url(../fonts/PT_Serif-Caption-Web-Regular.ttf);
+}
+@font-face {
+  font-family: 'PT Serif';
+  src: url(../fonts/PT_Serif-Web-Regular.ttf);
+}
+@font-face {
+  font-family: 'Fira Sans Regular';
+  src: url(../fonts/FiraSans-Regular.ttf);
+}
+@font-face {
+  font-family: 'Fira Sans Medium';
+  src: url(../fonts/FiraSans-Medium.ttf);
+}
+@font-face {
+  font-family: 'PT Sans Caption Bold';
+  src: url(../fonts/PT_Sans-Caption-Web-Bold.ttf);
+}
+@font-face {
+  font-family: 'PT Sans Caption Reg';
+  src: url(../fonts/PT_Sans-Caption-Web-Regular.ttf);
+}
 body {
   min-width: 320px;
 }
@@ -1534,7 +1554,7 @@ ul {
 
 .btn {
   display: inline-block;
-  font-family: "Fira Sans";
+  font-family: "Fira Sans Medium";
   font-size: 14px;
   line-height: 18px;
   font-weight: 500;
@@ -1665,7 +1685,7 @@ ul {
 }
 
 .h3-title {
-  font-family: "Fira Sans";
+  font-family: "Fira Sans Medium";
   font-size: 14px;
   line-height: 24px;
   font-weight: 500;
@@ -1689,7 +1709,7 @@ ul {
 }
 
 .booking-step-title {
-  font-family: "Fira Sans";
+  font-family: "Fira Sans Medium";
   font-size: 14px;
   line-height: 18px;
   font-weight: 500;
@@ -1702,6 +1722,7 @@ ul {
   opacity: 1;
 }
 .booking-step-title--light {
+  font-family: "Fira Sans Regular";
   font-weight: 400;
   color: #4c4c4c;
   letter-spacing: .05em;
@@ -1710,6 +1731,7 @@ ul {
   color: #0ab89d;
 }
 .booking-step-title--text {
+  font-family: "Fira Sans Regular";
   text-transform: none;
   font-weight: 400;
 }
@@ -1718,7 +1740,7 @@ ul {
 }
 
 .page-header__contacts {
-  font-family: "Fira Sans";
+  font-family: "Fira Sans Medium";
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -1728,7 +1750,7 @@ ul {
 }
 
 .comments__date {
-  font-family: "Fira Sans";
+  font-family: "Fira Sans Medium";
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -1739,7 +1761,7 @@ ul {
 }
 
 .page-header__phone {
-  font-family: "PT Sans Caption";
+  font-family: "PT Sans Caption Bold";
   font-size: 18px;
   line-height: 36px;
   font-weight: 700;
@@ -1749,7 +1771,7 @@ ul {
 }
 
 .promo-slider__item-text p {
-  font-family: "Fira Sans";
+  font-family: "Fira Sans Medium";
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
@@ -1777,7 +1799,7 @@ ul {
 }
 
 .promo-features p {
-  font-family: "Fira Sans";
+  font-family: "Fira Sans Medium";
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
@@ -1797,7 +1819,7 @@ ul {
 
 .comments__item p,
 .room-item__info-text {
-  font-family: "Fira Sans";
+  font-family: "Fira Sans Medium";
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
@@ -1807,7 +1829,7 @@ ul {
 }
 
 .promo-features__item span {
-  font-family: "Fira Sans";
+  font-family: "Fira Sans Medium";
   font-size: 14px;
   line-height: 18px;
   font-weight: 500;
@@ -1818,7 +1840,7 @@ ul {
 }
 
 .comments__reviewer-name {
-  font-family: "Fira Sans";
+  font-family: "Fira Sans Medium";
   font-size: 14px;
   line-height: 18px;
   font-weight: 500;
@@ -1828,9 +1850,8 @@ ul {
   letter-spacing: 0.05em;
 }
 
-.offers__item p,
-.booking-info__text {
-  font-family: "Fira Sans";
+.offers__item p {
+  font-family: "Fira Sans Medium";
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -1838,14 +1859,13 @@ ul {
   text-transform: none;
   text-decoration: none;
 }
-.offers__item p b,
-.booking-info__text b {
+.offers__item p b {
   font-weight: 500;
   color: #e85715;
 }
 
 .location__transport-item li {
-  font-family: "Fira Sans";
+  font-family: "Fira Sans Medium";
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
@@ -1860,7 +1880,7 @@ ul {
 .room-item__under-title,
 .room-title__text,
 .room__under-btn-text {
-  font-family: "Fira Sans";
+  font-family: "Fira Sans Medium";
   font-size: 14px;
   line-height: 24px;
   font-weight: 500;
@@ -1877,7 +1897,7 @@ ul {
 }
 
 .page-footer__address {
-  font-family: "Fira Sans";
+  font-family: "Fira Sans Medium";
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -1888,7 +1908,7 @@ ul {
 }
 
 .page-footer__tel-mail {
-  font-family: "Fira Sans";
+  font-family: "Fira Sans Medium";
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -1899,7 +1919,7 @@ ul {
 }
 
 .main-nav__link {
-  font-family: "Fira Sans";
+  font-family: "Fira Sans Medium";
   font-size: 14px;
   line-height: 72px;
   font-weight: 400;
@@ -1913,7 +1933,7 @@ ul {
 }
 
 .promo-slider__button {
-  font-family: "Fira Sans";
+  font-family: "Fira Sans Medium";
   font-size: 14px;
   line-height: 72px;
   font-weight: 400;
@@ -2488,7 +2508,7 @@ ul {
   margin-bottom: 4px;
 }
 .apartments-item__text {
-  font-family: "Fira Sans";
+  font-family: "Fira Sans Medium";
   font-size: 14px;
   line-height: 24px;
   font-weight: 500;
@@ -2580,7 +2600,7 @@ ul {
 }
 .promo-img__text {
   display: none;
-  font-family: "Fira Sans";
+  font-family: "Fira Sans Medium";
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
@@ -2759,7 +2779,7 @@ ul {
   margin-bottom: 15px;
 }
 .room-description .btn__wrapper-text {
-  font-family: "Fira Sans";
+  font-family: "Fira Sans Medium";
   font-size: 14px;
   line-height: 24px;
   font-weight: 500;
@@ -2821,7 +2841,7 @@ ul {
   }
 }
 .room-shown__text {
-  font-family: "Fira Sans";
+  font-family: "Fira Sans Medium";
   font-size: 14px;
   line-height: 24px;
   font-weight: 500;
@@ -2874,7 +2894,7 @@ ul {
   margin-bottom: 21px;
 }
 .room-shown__options-text {
-  font-family: "Fira Sans";
+  font-family: "Fira Sans Medium";
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
@@ -2889,7 +2909,7 @@ ul {
   }
 }
 .room-shown__options-list {
-  font-family: "Fira Sans";
+  font-family: "Fira Sans Medium";
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
@@ -2992,6 +3012,17 @@ ul {
 }
 .booking-info__text {
   padding: 0 45px;
+  font-family: "Fira Sans Regular";
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #191919;
+  text-transform: none;
+  text-decoration: none;
+}
+.booking-info__text b {
+  font-weight: 500;
+  color: #e85715;
 }
 
 .booking-form {
@@ -3011,8 +3042,6 @@ ul {
 }
 .booking-date__begin, .booking-date__end {
   font-size: 0;
-  text-align: left;
-  margin-left: 71px;
   margin-bottom: 36px;
 }
 .booking-date input {
@@ -3039,7 +3068,7 @@ ul {
 
 .booking-place {
   padding-top: 39px;
-  padding-bottom: 10px;
+  padding-bottom: 50px;
 }
 .booking-place input {
   display: none;
@@ -3087,6 +3116,158 @@ ul {
   height: 62px;
   background: url("../img/booking-place-cottage.jpg") no-repeat 0 0;
   opacity: .4;
+}
+
+.booking-place-type {
+  background: #f1f1f1;
+  padding-top: 47px;
+  padding-bottom: 51px;
+}
+.booking-place-type .inner-title {
+  margin-bottom: 27px;
+}
+.booking-place-type__wrapper {
+  background: #fff;
+  padding-top: 44px;
+  padding-bottom: 15px;
+}
+.booking-place-type input {
+  display: none;
+}
+.booking-place-type input:checked + label {
+  color: #191919;
+  position: relative;
+}
+.booking-place-type input:checked + label:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -25px;
+  width: 14px;
+  height: 9px;
+  border-left: 4px solid #0ab89d;
+  border-bottom: 4px solid #0ab89d;
+  transform: rotate(-45deg);
+}
+.booking-place-type label {
+  display: inline-block;
+  margin-bottom: 29px;
+  min-width: 90px;
+}
+
+.booking-personal {
+  padding-top: 47px;
+  padding-bottom: 19px;
+}
+.booking-personal .inner-title {
+  margin-bottom: 36px;
+}
+.booking-personal input {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  border: 1px solid #ebebeb;
+  width: 280px;
+  height: 50px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.booking-personal input:nth-of-type(3), .booking-personal input:nth-of-type(4) {
+  margin-bottom: 7px;
+}
+.booking-personal input::-moz-placeholder {
+  color: #979696;
+}
+.booking-personal input:valid + label:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -25px;
+  width: 14px;
+  height: 9px;
+  border-left: 4px solid #0ab89d;
+  border-bottom: 4px solid #0ab89d;
+  transform: rotate(-45deg);
+}
+.booking-personal__note {
+  color: #4c4c4c;
+  padding: 0 19px;
+  text-align: left;
+  letter-spacing: 0.05em;
+  margin-bottom: 25px;
+}
+
+.booking-payment {
+  background: #f1f1f1;
+  padding-top: 44px;
+  padding-bottom: 14px;
+}
+.booking-payment .inner-title {
+  margin-bottom: 36px;
+}
+.booking-payment label[for='booking-payment__type01'],
+.booking-payment label[for='booking-payment__type02'] {
+  color: #191919;
+  position: relative;
+}
+.booking-payment label[for='booking-payment__type01']:before,
+.booking-payment label[for='booking-payment__type02']:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -35px;
+  width: 14px;
+  height: 9px;
+  border-left: 4px solid #ebebeb;
+  border-bottom: 4px solid #ebebeb;
+  transform: rotate(-45deg);
+}
+.booking-payment input[name='booking-payment__type'] {
+  display: none;
+}
+.booking-payment input[name='booking-payment__type']:checked + label:before {
+  border-color: #0ab89d;
+}
+.booking-payment__to-pay {
+  display: none;
+}
+.booking-payment__pay-after {
+  padding: 20px 0 18px;
+  margin-bottom: 22px;
+  background: #fff;
+}
+.booking-payment__pay-after label {
+  display: inline-block;
+  text-align: left;
+  min-width: 166px;
+  margin-bottom: 0;
+}
+.booking-payment__pay-after-text {
+  display: none;
+}
+.booking-payment__pay-before {
+  padding-top: 20px;
+  background: #fff;
+}
+.booking-payment__pay-before-text {
+  display: none;
+}
+.booking-payment__pay-before input:not([name='booking-payment__type']) {
+  display: block;
+}
+.booking-payment__type {
+  display: inline-block;
+  text-align: left;
+  min-width: 166px;
+}
+.booking-payment__data {
+  display: inline-block;
+  margin-top: 19px;
+  margin-bottom: 20px;
+  min-width: 238px;
+  text-align: left;
 }
 
 /*

@@ -1,0 +1,87 @@
+//booking-payment
+.booking-payment{
+  background: #f1f1f1;
+  padding-top: 44px;
+  padding-bottom: 14px;
+
+  .inner-title{
+    margin-bottom: 36px;
+  }
+
+  label[for='booking-payment__type01'],
+  label[for='booking-payment__type02']{
+    color: $dark;
+    position: relative;
+
+    &:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -35px;
+      width: 14px;
+      height: 9px;
+      border-left: 4px solid $lightergray;
+      border-bottom: 4px solid $lightergray;
+      transform: rotate(-45deg);
+    }
+  }
+
+  input[name='booking-payment__type']{
+    display: none;
+
+    &:checked + label{
+      &:before{
+        border-color: $green;
+      }
+    }
+  }
+
+  &__to-pay{
+    display: none;
+  }
+
+  &__pay-after{
+    padding: 20px 0 18px;
+    margin-bottom: 22px;
+
+    label{
+      display: inline-block;
+      text-align: left;
+      min-width: 166px;
+      margin-bottom: 0;
+    }
+
+    &-text{
+      display: none;
+    }
+
+    background: #fff;
+  }
+
+  &__pay-before{
+    padding-top: 20px;
+    background: #fff;
+
+    &-text{
+      display: none;
+    }
+
+    input:not([name='booking-payment__type']){
+      display: block;
+    }
+  }
+
+  &__type{
+    display: inline-block;
+    text-align: left;
+    min-width: 166px;
+  }
+
+  &__data{
+    display: inline-block;
+    margin-top: 19px;
+    margin-bottom: 20px;
+    min-width: 238px;
+    text-align: left;
+  }
+}

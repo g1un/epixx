@@ -13,5 +13,17 @@
 
   &__text{
     padding: 0 45px;
+    font-family: $firasansreg;
+    font-size: $small-font-size;
+    line-height: $small-font-size + 4px;
+    font-weight: $fw400;
+    color: $dark;
+    text-transform: none;
+    text-decoration: none;
+
+    b{
+      font-weight: $fw500;
+      color: $dark-orange;
+    }
   }
 }

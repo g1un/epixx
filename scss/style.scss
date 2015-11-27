@@ -50,10 +50,11 @@
 @import "bootstrap/assets/stylesheets/bootstrap/responsive-utilities";
 
 //My styles
-@import url(https://fonts.googleapis.com/css?family=Fira+Sans:400,500&subset=latin,cyrillic);
-@import url(https://fonts.googleapis.com/css?family=PT+Serif+Caption&subset=latin,cyrillic);
-@import url(https://fonts.googleapis.com/css?family=PT+Serif&subset=latin,cyrillic);
-@import url(https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700&subset=latin,cyrillic);
+//@import url(https://fonts.googleapis.com/css?family=Fira+Sans:400,500&subset=latin,cyrillic);
+//@import url(https://fonts.googleapis.com/css?family=PT+Serif+Caption&subset=latin,cyrillic);
+//@import url(https://fonts.googleapis.com/css?family=PT+Serif&subset=latin,cyrillic);
+//@import url(https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700&subset=latin,cyrillic);
+@import "components/fonts";
 @import "components/myreset";
 @import "components/myvariables";
 @import "components/btn";
@@ -87,6 +88,9 @@
 @import "components/booking-form";
 @import "components/booking-date";
 @import "components/booking-place";
+@import "components/booking-place-type";
+@import "components/booking-personal";
+@import "components/booking-payment";
 
 //carousel
 @import "carousel/owl.theme";
