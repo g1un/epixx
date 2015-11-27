@@ -1,0 +1,22 @@
+{
+  "name": "g1un",
+  "description": "1",
+  "main": "index",
+  "authors": [
+    "g1un"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "1"
+  ],
+  "homepage": "https://github.com/g1un/epixx",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
