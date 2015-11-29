@@ -33,55 +33,64 @@
     </header>
 
     <section class='booking-info'>
-      <h2 class='inner-title--big h2-title'>Бронирование</h2>
+      <h1 class='booking-info__title title-second'>Бронирование</h1>
       <p class="booking-info__text">
         Чтобы забронировать номер в отеле или коттедж, заполните форму ниже или просто позвоните по телефону: <b>+7 812 777-55-88</b>
       </p>
     </section>
 
     <form class="booking-form" action='#' method='post'>
+
       <section class='booking-date'>
-        <h3 class='booking-step-title'>Шаг 1</h3>
-        <h1 class='inner-title'>Дата отдыха</h1>
+        <h3 class='booking-date__subtitle'>Шаг 1</h3>
+        <h2 class='booking-date__title title-third'>Дата отдыха</h2>
         <div class='booking-date__wrapper'>
-          <h3 class="booking-step-title booking-step-title--light">Дата въезда</h3>
-          <div class='booking-date__begin'>
-            <input class="booking-step-title booking-step-title--green" id='booking-date__begin-day' type='text' name='booking-date__begin-day' placeholder="10">
-            <input class="booking-step-title booking-step-title--green" id='booking-date__begin-month' type='text' name='booking-date__begin-month' placeholder="11">
-            <input class="booking-step-title booking-step-title--green" id='booking-date__begin-year' type='text' name='booking-date__begin-year' placeholder="2015">
-          </div>
-          <h3 class="booking-step-title booking-step-title--light">Дата выезда</h3>
-          <div class='booking-date__end'>
-            <input class="booking-step-title" id='booking-date__end-day' type='text' name='booking-date__end-day' placeholder="дд">
-            <input class="booking-step-title" id='booking-date__end-month' type='text' name='booking-date__end-month' placeholder="мм">
-            <input class="booking-step-title" id='booking-date__end-year' type='text' name='booking-date__end-year' placeholder="гггг">
-          </div>
+
+          <h3 class="booking-date__subtitle booking-date__subtitle--regular">Дата въезда</h3>
+
+          <input class="booking-date__begin booking-date__begin--day" id='booking-date__begin--day' type='text' name='booking-date__begin--day' placeholder="10">
+          <input class="booking-date__begin booking-date__begin--month" id='booking-date__begin--month' type='text' name='booking-date__begin--month' placeholder="11">
+          <input class="booking-date__begin booking-date__begin--year" id='booking-date__begin--year' type='text' name='booking-date__begin--year' placeholder="2015">
+
+          <h3 class="booking-date__subtitle booking-date__subtitle--regular">Дата выезда</h3>
+
+          <input class="booking-date__end booking-date__end--day" id='booking-date__end--day' type='text' name='booking-date__end--day' placeholder="дд">
+          <input class="booking-date__end booking-date__end--month" id='booking-date__end--month' type='text' name='booking-date__end--month' placeholder="мм">
+          <input class="booking-date__end booking-date__end--year" id='booking-date__end--year' type='text' name='booking-date__end--year' placeholder="гггг">
+
         </div>        
       </section>
 
       <section class='booking-place'>
-        <h3 class='booking-step-title'>Шаг 2</h3>
-        <h1 class='inner-title'>Место проживания</h1>
+        <h3 class='booking-place__subtitle'>Шаг 2</h3>
+        <h2 class='booking-place__title title-third'>Место проживания</h2>
         <div class='booking-place__wrapper'>
-          <input id='booking-place__hotel' type='radio' name='booking-place'>
-          <label class="booking-place__hotel booking-step-title booking-step-title--light" for='booking-place__hotel'>Отель</label>
-          <input id='booking-place__cottage' type='radio' name='booking-place'>
-          <label class="booking-place__cottage booking-step-title booking-step-title--light" for='booking-place__cottage'>Коттедж</label>
+
+          <input class="booking-place__hotel" id='booking-place__hotel' type='radio' name='booking-place'>
+          <label class="booking-place__hotel-label" for='booking-place__hotel'>Отель</label>
+          <input class="booking-place__cottage" id='booking-place__cottage' type='radio' name='booking-place'>
+          <label class="booking-place__cottage-label" for='booking-place__cottage'>Коттедж</label>
+
         </div>        
       </section>
 
       <section class='booking-place-type'>
-        <h3 class='booking-step-title'>Шаг 3</h3>
-        <h1 class='inner-title'>Тип коттеджа</h1>
+        <h3 class='booking-place-type__subtitle'>Шаг 3</h3>
+        <h2 class='booking-place-type__title title-third'>Тип коттеджа</h2>
         <div class='booking-place-type__wrapper'>
+
           <input id='booking-place-type__01' type='radio' name='booking-place-type'>
-          <label class="booking-step-title" for='booking-place-type__01'>Флагман</label><br>
+          <label class="booking-place-type__label" for='booking-place-type__01'>Флагман</label><br>
+
           <input id='booking-place-type__02' type='radio' name='booking-place-type'>
-          <label class="booking-step-title" for='booking-place-type__02'>Озерный</label><br>
+          <label class="booking-place-type__label" for='booking-place-type__02'>Озерный</label><br>
+
           <input id='booking-place-type__03' type='radio' name='booking-place-type'>
-          <label class="booking-step-title" for='booking-place-type__03'>Ольховка</label><br>
+          <label class="booking-place-type__label" for='booking-place-type__03'>Ольховка</label><br>
+
           <input id='booking-place-type__04' type='radio' name='booking-place-type'>
-          <label class="booking-step-title" for='booking-place-type__04'>Портовый</label><br>
+          <label class="booking-place-type__label" for='booking-place-type__04'>Портовый</label><br>
+
         </div>
         <div class='booking-place-type__features'>
           <div></div>
@@ -134,7 +143,7 @@
 
           <div class='booking-payment__pay-before'>
             <input id='booking-payment__type02' type='radio' name='booking-payment__type'>
-            <label class='booking-payment__type booking-step-title' for='booking-payment__type02'>Сейчас</label><br>
+            <label class='booking-payment__type booking-payment__type--pay-before booking-step-title' for='booking-payment__type02'>Сейчас</label><br>
             <p class="booking-payment__pay-before-text booking-step-title booking-step-title--text">
               Прямо сейчас вы можете произвести оплату с помощью банковской карты.
             </p>
@@ -142,11 +151,11 @@
             <label class='booking-payment__data booking-step-title booking-step-title--light' for='booking-payment__card-number'>Номер карты</label>
             <input class="booking-step-title booking-step-title--light" id='booking-payment__card-number' type='text' name='booking-payment__card-number' placeholder="0000-0000-0000-0000">
 
-            <label class='booking-payment__data booking-step-title booking-step-title--light' for='booking-payment__code-CVV'>Код CVV</label>
-            <input class="booking-step-title booking-step-title--light" id='booking-payment__code-CVV' type='text' name='booking-payment__code-CVV' placeholder="123">
-
             <label class='booking-payment__data booking-step-title booking-step-title--light' for='booking-payment__card-surname'>Фамилия владельца карты</label>
             <input class="booking-step-title booking-step-title--light" id='booking-payment__card-surname' type='text' name='booking-payment__card-surname' placeholder="Vladimir Vladimirov">
+
+            <label class='booking-payment__data booking-step-title booking-step-title--light' for='booking-payment__card-CVV'>Код CVV</label>
+            <input class="booking-step-title booking-step-title--light" id='booking-payment__card-CVV' type='text' name='booking-payment__card-CVV' placeholder="123">
 
             <label class='booking-payment__data booking-step-title booking-step-title--light' for='booking-payment__card-expired'>Действует до</label>
             <input class="booking-step-title booking-step-title--light" id='booking-payment__card-expired' type='text' name='booking-payment__card-expired' placeholder="01 / 2018">

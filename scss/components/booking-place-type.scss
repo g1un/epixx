@@ -1,23 +1,34 @@
 //booking-place-type
-.booking-place-type{
-  background: #f1f1f1;
+.booking-place-type {
   padding-top: 47px;
   padding-bottom: 51px;
 
-  .inner-title{
-    margin-bottom: 27px;
+  &__subtitle{
+    @extend .booking-form__text;
   }
 
+  &__title{
+    margin-bottom: 27px;
+  }
+  
   &__wrapper{
     background: #fff;
     padding-top: 44px;
     padding-bottom: 15px;
   }
 
-  input{
+  input[name='booking-place-type']{
     display: none;
+  }
 
-    &:checked + label{
+  &__label{
+    @extend .booking-form__text;
+
+    display: inline-block;
+    margin-bottom: 29px;
+    min-width: 90px;
+
+    input:checked + &{
       color: $dark;
       position: relative;
 
@@ -34,10 +45,42 @@
       }
     }
   }
-
-  label{
-    display: inline-block;
-    margin-bottom: 29px;
-    min-width: 90px;
-  }
 }
+
+//  .inner-title{
+//    margin-bottom: 27px;
+//  }
+//
+//  &__wrapper{
+//    background: #fff;
+//    padding-top: 44px;
+//    padding-bottom: 15px;
+//  }
+//
+//  input{
+//    display: none;
+//
+//    &:checked + label{
+//      color: $dark;
+//      position: relative;
+//
+//      &:before{
+//        content: '';
+//        position: absolute;
+//        top: 0;
+//        left: -25px;
+//        width: 14px;
+//        height: 9px;
+//        border-left: 4px solid $green;
+//        border-bottom: 4px solid $green;
+//        transform: rotate(-45deg);
+//      }
+//    }
+//  }
+//
+//  label{
+//    display: inline-block;
+//    margin-bottom: 29px;
+//    min-width: 90px;
+//  }
+//}

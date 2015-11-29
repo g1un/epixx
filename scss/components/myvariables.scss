@@ -10,7 +10,8 @@ $darkgray: #4c4c4c;
 $gray: #838383;
 $lightgray: #979696;
 $lightergray: #ebebeb;
-$light: #fafafa;
+$light: #f1f1f1;
+$lighter: #fafafa;
 
 //font-families
 $ptserif: 'PT Serif Caption';
@@ -21,11 +22,11 @@ $ptserifreg: 'PT Serif';
 
 //font-sizes
 $base-font-size: 14px; //14
-$h1-font-size: $base-font-size + 22px; //36
-$h2-font-size: $base-font-size + 16px; //30
 $small-font-size: $base-font-size + 2px; //16
 $medium-font-size: $base-font-size + 4px; //18
 $big-font-size: $base-font-size + 12px; //26
+$h2-font-size: $base-font-size + 16px; //30
+$h1-font-size: $base-font-size + 22px; //36
 
 //font-weight
 $fw400: 400;
@@ -34,3 +35,55 @@ $fw700: 700;
 
 //width
 $main-width: 1180;
+
+//extends
+.text1{
+  font-family: $firasansreg;
+  font-size: $small-font-size;
+  line-height: $small-font-size + 4px;
+  font-weight: $fw400;
+  color: $dark;
+  text-transform: none;
+  text-decoration: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+
+  b{
+    font-weight: $fw500;
+    color: $dark-orange;
+  }
+}
+
+.booking-form__text{
+  font-family: $firasans;
+  font-size: $base-font-size;
+  line-height: $base-font-size + 4px;
+  font-weight: $fw500;
+  color: $lightgray;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0 0 3px;
+  padding: 0;
+
+  &--regular{
+    font-family: $firasansreg;
+    font-weight: $fw400;
+    color: $darkgray;
+    letter-spacing: .05em;
+  }
+
+  &--green{
+    color: $green;
+  }
+
+  &--text{
+    font-family: $firasansreg;
+    text-transform: none;
+    font-weight: $fw400;
+
+    span{
+      border-bottom: 1px dashed #000;
+    }
+  }
+}

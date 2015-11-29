@@ -1,4 +1,10 @@
 //booking-form
 .booking-form{
+  background: #fff;
+  
+  &>section:nth-child(odd){
+    background: $light;
+  }
+  
   text-align: center;
 }

@@ -2,10 +2,14 @@
 .booking-payment{
   background: #f1f1f1;
   padding-top: 44px;
-  padding-bottom: 14px;
+  padding-bottom: 200px;
 
   .inner-title{
     margin-bottom: 36px;
+  }
+
+  &__wrapper{
+    position: relative;
   }
 
   label[for='booking-payment__type01'],
@@ -37,7 +41,21 @@
   }
 
   &__to-pay{
-    display: none;
+    position: absolute;
+    top: 512px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    padding-top: 22px;
+    padding-bottom: 10px;
+  }
+
+  &__sum{
+    padding-bottom: 12px;
+
+    &-value{
+      padding-bottom: 10px;
+    }
   }
 
   &__pay-after{
@@ -61,13 +79,39 @@
   &__pay-before{
     padding-top: 20px;
     background: #fff;
+    padding-bottom: 10px;
 
     &-text{
       display: none;
     }
 
-    input:not([name='booking-payment__type']){
-      display: block;
+    input{
+      &[name^='booking-payment__card-']{
+        display: inline;
+        padding: 0;
+        margin: 0;
+        outline: none;
+        border: none;
+        box-shadow: none;
+        border: 1px solid $lightergray;
+        width: 239px;
+        height: 40px;
+        text-align: center;
+        margin-bottom: 14px;
+        color: $lightgray;
+      }
+
+      &[name='booking-payment__card-CVV'],
+      &[name='booking-payment__card-expired']{
+        width: 135px;
+        display: block;
+        margin-left: 41px;
+      }
+    }
+
+
+    label[for^='booking-payment__card-']{
+      margin-top: 0;
     }
   }
 
@@ -75,13 +119,26 @@
     display: inline-block;
     text-align: left;
     min-width: 166px;
+
+    &--pay-before{
+      margin-bottom: 20px;
+    }
   }
 
   &__data{
     display: inline-block;
     margin-top: 19px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     min-width: 238px;
     text-align: left;
+  }
+
+  .btn--submit{
+    margin-top: 24px;
+    margin-bottom: 10px;
+    outline: 0;
+    border: 0;
+    width: 200px;
+    display: none;
   }
 }

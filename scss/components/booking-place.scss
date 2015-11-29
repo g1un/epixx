@@ -3,15 +3,11 @@
   padding-top: 39px;
   padding-bottom: 50px;
 
-  input{
-    display: none;
-
-    &:checked + label:after{
-      opacity: 1;
-    }
+  &__subtitle{
+    @extend .booking-form__text;
   }
 
-  .inner-title{
+  &__title{
     margin-bottom: 25px;
   }
 
@@ -21,15 +17,28 @@
     margin-right: 20px;
     font-size: 0;
     padding-top: 25px;
+    min-height: 160px;
+  }
 
-    label{
+  &__hotel,
+  &__cottage{
+    display: none;
+
+    &:checked + &-label:after{
+      opacity: 1;
+    }
+
+    &-label{
+      @extend .booking-form__text;
+      @extend .booking-form__text--regular;
+
       display: inline-block;
+      vertical-align: top;
       width: 50%;
-      margin-bottom: 115px;
     }
   }
 
-  &__hotel{
+  &__hotel-label{
     position: relative;
 
     &:after{
@@ -44,10 +53,10 @@
     }
   }
 
-  &__cottage{
+  &__cottage-label {
     position: relative;
 
-    &:after{
+    &:after {
       content: '';
       position: absolute;
       top: 28px;
@@ -58,6 +67,64 @@
       opacity: .4;
     }
   }
+
+
+
+  //input{
+  //  display: none;
+  //
+  //  &:checked + label:after{
+  //    opacity: 1;
+  //  }
+  //}
+  //
+  //.inner-title{
+  //  margin-bottom: 25px;
+  //}
+  //
+  //&__wrapper{
+  //  border: 1px solid $lightergray;
+  //  margin-left: 20px;
+  //  margin-right: 20px;
+  //  font-size: 0;
+  //  padding-top: 25px;
+  //
+  //  label{
+  //    display: inline-block;
+  //    width: 50%;
+  //    margin-bottom: 115px;
+  //  }
+  //}
+  //
+  //&__hotel{
+  //  position: relative;
+  //
+  //  &:after{
+  //    content: '';
+  //    position: absolute;
+  //    top: 28px;
+  //    left: 28px;
+  //    width: 82px;
+  //    height: 64px;
+  //    background: url("../img/booking-place-hotel.jpg") no-repeat 0 0;
+  //    opacity: .4;
+  //  }
+  //}
+  //
+  //&__cottage{
+  //  position: relative;
+  //
+  //  &:after{
+  //    content: '';
+  //    position: absolute;
+  //    top: 28px;
+  //    left: 30px;
+  //    width: 80px;
+  //    height: 62px;
+  //    background: url("../img/booking-place-cottage.jpg") no-repeat 0 0;
+  //    opacity: .4;
+  //  }
+  //}
 
 
 }

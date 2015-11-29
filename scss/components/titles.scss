@@ -33,7 +33,8 @@
   }
 }
 
-.h2-title{
+.h2-title,
+.title-second{
   font-family: $ptserif;
   font-size: $h2-font-size;
   line-height: $h2-font-size + 6px;
@@ -42,17 +43,16 @@
   text-transform: none;
   text-decoration: none;
   letter-spacing: 0.05em;
-
   margin-bottom: 29px;
 
   &--white{
     color: #fff;
   }
 
-  @media (max-width: 320px) {
-    font-size: $big-font-size;
-    line-height: $big-font-size + 4px;
-  }
+  //@media (max-width: 320px) {
+  //  font-size: $big-font-size;
+  //  line-height: $big-font-size + 4px;
+  //}
 }
 
 .h3-title{
@@ -70,7 +70,8 @@
   }
 }
 
-.inner-title{
+.inner-title,
+.title-third{
   font-family: $ptserifreg;
   font-size: $big-font-size;
   line-height: $big-font-size + 4px;
@@ -80,38 +81,35 @@
   text-decoration: none;
 }
 
-.booking-step-title{
-  font-family: $firasans;
-  font-size: $base-font-size;
-  line-height: $base-font-size + 4px;
-  font-weight: $fw500;
-  color: $lightgray;
-  text-transform: uppercase;
-  text-decoration: none;
-  margin-bottom: 3px;
-
-  &::-moz-placeholder{
-    opacity: 1;
-  }
-
-  &--light{
-    font-family: $firasansreg;
-    font-weight: $fw400;
-    color: #4c4c4c;
-    letter-spacing: .05em;
-  }
-
-  &--green{
-    color: $green;
-  }
-
-  &--text{
-    font-family: $firasansreg;
-    text-transform: none;
-    font-weight: $fw400;
-
-    span{
-      border-bottom: 1px dashed #000;
-    }
-  }
-}
+//.booking-form__text{
+//  font-family: $firasans;
+//  font-size: $base-font-size;
+//  line-height: $base-font-size + 4px;
+//  font-weight: $fw500;
+//  color: $lightgray;
+//  text-transform: uppercase;
+//  text-decoration: none;
+//  margin: 0 0 3px;
+//  padding: 0;
+//
+//  &--regular{
+//    font-family: $firasansreg;
+//    font-weight: $fw400;
+//    color: $darkgray;
+//    letter-spacing: .05em;
+//  }
+//
+//  &--green{
+//    color: $green;
+//  }
+//
+//  &--text{
+//    font-family: $firasansreg;
+//    text-transform: none;
+//    font-weight: $fw400;
+//
+//    span{
+//      border-bottom: 1px dashed #000;
+//    }
+//  }
+//}
